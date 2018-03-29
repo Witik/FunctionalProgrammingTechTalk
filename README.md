@@ -5,8 +5,8 @@ http://elm-lang.org/examples/binary-tree
 
 
 ## Running locally
-[Webstorm Elm Plugin](https://plugins.jetbrains.com/plugin/8192-elm-language-plugin)
-`npm install elm -g`
+[Webstorm Elm Plugin](https://plugins.jetbrains.com/plugin/8192-elm-language-plugin)  
+`npm install elm -g`  
 `elm-reactor`
 
 ## Example Elm & F#
