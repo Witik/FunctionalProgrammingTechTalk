@@ -4,8 +4,8 @@
 http://elm-lang.org/examples/binary-tree
 
 
-# Example Elm & F#
-## F#
+## Example Elm & F#
+### F#
 ```FSharp
 module Program
 
@@ -35,7 +35,7 @@ let main argv =
     print program
     0
 ```
-## Elm
+### Elm
 ```Elm
 import Html exposing (text)
 
@@ -51,16 +51,12 @@ eval expression =
   case expression of
     T ->
         True
-
     F ->
         False
-
     Not expr ->
         not (eval expr)
-
     And left right ->
         eval left && eval right
-
     Or left right ->
         eval left || eval right
 
