@@ -1,6 +1,6 @@
 # FunctionalProgrammingTechTalk
 
-## Exersises
+## Exercises
 http://elm-lang.org/examples/binary-tree
 
 
