@@ -6,9 +6,9 @@ main =
   text (toString program)
 
 program = (return 1)
---    >>= (write "Hello")
+    >>= (write "Hello")
     >>= (map ((+) 5))
---    >>= (write "World")
+    >>= (write "World")
 
 map : (a -> b) -> a -> State b
 map f a = State ((f a), [])
@@ -28,5 +28,5 @@ apply (State (value1, state1)) (State (value2, state2)) =
 
 (>>=) = bind
 
-infixr 9 >>=
+infixl 1 >>=
 

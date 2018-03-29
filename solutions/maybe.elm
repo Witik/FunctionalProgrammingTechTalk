@@ -6,6 +6,7 @@ main =
   text (toString program)
 
 program = (maybeAdd 1 5)
+    >>= maybeAdd 4
     >>= \x -> return (x + 2)
 
 return : a -> Maybe a
@@ -29,4 +30,4 @@ apply x y =
 
 (>>=) = bind
 
-infixr 9 >>=
+infixl 1 >>=
