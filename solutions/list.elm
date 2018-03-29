@@ -49,7 +49,4 @@ reduce f seed list =
         Nil -> seed
         Cons a rest -> f a (reduce f seed rest)
 
-
 program = (reduce (+) 0 (map ((+) 1)(generateIntegerList 5))) - (sum (reverseList (generateIntegerList 5)))
-
--- reduce

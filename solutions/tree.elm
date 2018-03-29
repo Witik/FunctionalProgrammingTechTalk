@@ -22,6 +22,14 @@ sum tree =
         Leaf n -> n
         Branch left right -> (sum left) + (sum right)
 
--- map
+map : (a -> b) -> Tree a -> Tree b
+map f tree =
+    case tree of
+        Leaf n -> Leaf (f n)
+        Branch left right -> Branch (f left) (f right)
 
--- reduce
+reduce : (a -> a -> a) -> a -> Tree a -> a
+reduce f seed tree =
+    case tree of
+        Leaf n -> f n seed
+        Branch left right -> f (reduce left) (reduce right)
