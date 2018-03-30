@@ -41,4 +41,6 @@ program =
 
    Think of a way to write the sum function in one line using reduce
 
+   Think of a way to generate an incrementing integer list with the following function signature
+   incList : Int -> List Int
 -}
