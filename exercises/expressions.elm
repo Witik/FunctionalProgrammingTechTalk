@@ -7,10 +7,10 @@ type Maybe a
 
 type Expr
     = Val Int
-    | Add Int Int
-    | Sub Int Int
-    | Mul Int Int
-    | Div Int Int
+    | Add Expr Expr
+    | Sub Expr Expr
+    | Mul Expr Expr
+    | Div Expr Expr
 
 
 print x =
@@ -23,7 +23,7 @@ main =
 
 program =
     0
---    maybeEval (Div 6 3)
+--    maybeEval (Div (Val 6) (Val 3))
 
 -- eval : Expr -> Int
 

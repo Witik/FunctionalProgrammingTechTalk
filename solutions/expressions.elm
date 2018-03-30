@@ -23,7 +23,7 @@ main =
 
 
 program =
-    maybeEval (Div 6 3)
+    maybeEval (Div (Val 3) (Val 0))
 
 
 eval : Expr -> Int
@@ -49,7 +49,7 @@ maybeEval : Expr -> Maybe Int
 maybeEval expression =
     case expression of
         Val x ->
-            x
+            Just x
 
         Add x y ->
             map2 (+) (maybeEval x) (maybeEval y)
@@ -60,7 +60,7 @@ maybeEval expression =
         Mul x y ->
             map2 (*) (maybeEval x) (maybeEval y)
 
-        Div x 0 ->
+        Div x (Val 0) ->
             Nothing
 
         Div x y ->
