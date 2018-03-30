@@ -1,10 +1,8 @@
-module Main exposing (..)
-
 import Html exposing (text)
 
 
-type State a
-    = State ( a, List String )
+type alias State a
+    = ( a, List String )
 
 
 main =
