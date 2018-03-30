@@ -5,6 +5,9 @@ type State a = State (a, List String)
 main =
   text (toString program)
 
+program = 0
+
+{-
 program = (return 1)
     >>= (write "Hello")
     >>= (map ((+) 5))
@@ -24,3 +27,4 @@ apply : State a -> State b -> State b
 
 infixl 1 >>=
 
+-}

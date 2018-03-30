@@ -1,8 +1,11 @@
 # FunctionalProgrammingTechTalk
 
-## Exercises
-http://elm-lang.org/examples/binary-tree
+Exercises in the `exercises` folder
 
+Solutions to these exercises in the `solutions` folder
+
+## Elm Search
+http://klaftertief.github.io/elm-search/
 
 ## Running locally
 [Webstorm Elm Plugin](https://plugins.jetbrains.com/plugin/8192-elm-language-plugin)  
