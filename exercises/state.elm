@@ -1,30 +1,38 @@
+module Main exposing (..)
+
 import Html exposing (text)
 
-type State a = State (a, List String)
+
+type State a
+    = State ( a, List String )
+
 
 main =
-  text (toString program)
+    text (toString program)
 
-program = 0
+
+program =
+    0
+
+
 
 {-
-program = (return 1)
-    >>= (write "Hello")
-    >>= (map ((+) 5))
-    >>= (write "World")
+   program = (return 1)
+       >>= (write "Hello")
+       >>= (map ((+) 5))
+       >>= (write "World")
 
-map : (a -> b) -> a -> State b
+   map : (a -> b) -> a -> State b
 
-write : String -> a -> State a
+   write : String -> a -> State a
 
-return : a -> State a
+   return : a -> State a
 
-bind : State a -> (a -> State b) -> State b
+   bind : State a -> (a -> State b) -> State b
 
-apply : State a -> State b -> State b
+   apply : State a -> State b -> State b
 
-(>>=) = bind
+   (>>=) = bind
 
-infixl 1 >>=
-
+   infixl 1 >>=
 -}

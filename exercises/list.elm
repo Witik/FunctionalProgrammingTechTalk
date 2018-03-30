@@ -1,11 +1,19 @@
 import Html exposing (text)
 
-type List a = Nil | Cons a (List a)
+
+type List a
+    = Nil
+    | Cons a (List a)
+
 
 main =
-  text (toString program)
+    text (toString program)
 
-program = 0
+
+program =
+    0
+
+
 
 -- Return the length of the given list
 -- length : List a -> Int
@@ -31,6 +39,6 @@ program = 0
 
 {-
 
-Think of a way to write the sum function in one line using reduce
+   Think of a way to write the sum function in one line using reduce
 
 -}

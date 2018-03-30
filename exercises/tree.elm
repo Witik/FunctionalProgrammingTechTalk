@@ -1,11 +1,20 @@
 import Html exposing (text)
 
-type Tree a = Leaf a | Branch (Tree a) (Tree a)
+
+type Tree a
+    = Leaf a
+    | Branch (Tree a) (Tree a)
+
 
 main =
-  text (toString program)
+    text (toString program)
 
-program = 0
+
+program =
+    0
+
+
+
 -- program = sum (Branch (Branch (Leaf 1) (Branch (Leaf 1) (Leaf 4))) (Leaf 45))
 
 -- Calculate the length of the longest branch of a tree. (use the max function)
